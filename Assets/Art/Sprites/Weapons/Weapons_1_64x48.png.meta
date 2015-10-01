@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 23d8d02b1e6b0d74f875530d0c9a4f01
+timeCreated: 1436976134
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Weapons_1_64x48_0
+    21300002: Weapons_1_64x48_1
+    21300004: Weapons_1_64x48_2
+    21300006: Weapons_1_64x48_3
+    21300008: Weapons_1_64x48_4
+    21300010: Weapons_1_64x48_5
+    21300012: Weapons_1_64x48_6
+    21300014: Weapons_1_64x48_7
+    21300016: Weapons_1_64x48_8
+    21300018: Weapons_1_64x48_9
+    21300020: Weapons_1_64x48_10
+    21300022: Weapons_1_64x48_11
+    21300024: Weapons_1_64x48_12
+    21300026: Weapons_1_64x48_13
+    21300028: Weapons_1_64x48_14
+    21300030: Weapons_1_64x48_15
+    21300032: Weapons_1_64x48_16
+    21300034: Weapons_1_64x48_17
+    21300036: Weapons_1_64x48_18
+    21300038: Weapons_1_64x48_19
+    21300040: Weapons_1_64x48_20
+    21300042: Weapons_1_64x48_21
+    21300044: Weapons_1_64x48_22
+    21300046: Weapons_1_64x48_23
+    21300048: Weapons_1_64x48_24
+    21300050: Weapons_1_64x48_25
+    21300052: Weapons_1_64x48_26
+    21300054: Weapons_1_64x48_27
+    21300056: Weapons_1_64x48_28
+    21300058: Weapons_1_64x48_29
+    21300060: Weapons_1_64x48_30
+    21300062: Weapons_1_64x48_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Weapons_1_64x48_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 336
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 144
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Weapons_1_64x48_31
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: .300000012, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
