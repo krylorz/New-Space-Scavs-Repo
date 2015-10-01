@@ -109,8 +109,21 @@ public class Controls : MonoBehaviour {
 		{
 			if(Input.GetKeyDown(KeyCode.X))
 			{
-				other.transform.parent = GetComponentInChildren<WeaponAim>().transform;
-				other.gameObject.transform.localPosition = new Vector2(-0.08f,-0.01f);
+				//finding point to lock weapon to hand
+				other.transform.parent = GetComponentInChildren<WeaponAim>().transform.FindChild("PlayerHand").transform;
+				//sync position
+
+				//first get the difference to move from grip point of weapon to hand
+				Vector3 posDiff = other.transform.parent.position - other.transform.FindChild("weaponGrip").transform.position;
+
+				//then move weapon by that much
+				other.transform.position = other.transform.position + posDiff;
+
+				//sync scale
+				other.transform.transform.localScale =other.transform.parent.transform.localScale;
+
+				//sync rotation
+				other.transform.transform.rotation =other.transform.parent.transform.rotation;
 			}
 		}
 	}
