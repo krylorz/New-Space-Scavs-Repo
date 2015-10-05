@@ -9,6 +9,7 @@ public class Controls : MonoBehaviour {
 	bool inair;
 	public Sprite fall;
 	public Sprite jump;
+	Transform pHand;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,7 @@ public class Controls : MonoBehaviour {
 		playerAni = GetComponentInChildren<Animator>();
 		jumpforce = new Vector2(0f,200f);
 		inair = false;
+		pHand = GetComponentInChildren<WeaponAim>().transform.FindChild("PlayerHand");
 	
 	}
 	
@@ -89,6 +91,13 @@ public class Controls : MonoBehaviour {
 			transform.localScale = newscale;
 		}
 
+
+		//Shooting
+		if(Input.GetButtonDown("Fire1") && pHand.transform.childCount !=0)
+		{
+			pHand.GetComponentInChildren<weapon>().Shoot();
+		}
+
 	}
 
 	void OnCollisionEnter2D(Collision2D other)
@@ -110,7 +119,7 @@ public class Controls : MonoBehaviour {
 			if(Input.GetKeyDown(KeyCode.X))
 			{
 				//finding point to lock weapon to hand
-				other.transform.parent = GetComponentInChildren<WeaponAim>().transform.FindChild("PlayerHand").transform;
+				other.transform.parent = pHand.transform;
 				//sync position
 
 				//first get the difference to move from grip point of weapon to hand

@@ -15,6 +15,7 @@ public class WeaponAim : MonoBehaviour
 	{
 		float AngleRad = Mathf.Atan2 (Input.mousePosition.y - transform.position.y, Input.mousePosition.x - transform.position.x);
 		float AngleDeg = (180 / Mathf.PI) * AngleRad;
-		this.transform.rotation = Quaternion.Euler (0, 0, AngleDeg);
+		this.transform.rotation = Quaternion.AngleAxis(AngleDeg,Vector3.forward);
+
 	}
 }
