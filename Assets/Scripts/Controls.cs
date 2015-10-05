@@ -124,6 +124,7 @@ public class Controls : MonoBehaviour {
 
 				//sync rotation
 				other.transform.transform.rotation =other.transform.parent.transform.rotation;
+				//blah
 			}
 		}
 	}
