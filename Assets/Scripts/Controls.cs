@@ -10,6 +10,11 @@ public class Controls : MonoBehaviour {
 	public Sprite fall;
 	public Sprite jump;
 	Transform pHand;
+	public Vector2 throwForce;
+
+	public int maxSupplies = 8;
+	public int curSupplies = 0;
+	bool onePickUp = true;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +23,7 @@ public class Controls : MonoBehaviour {
 		jumpforce = new Vector2(0f,200f);
 		inair = false;
 		pHand = GetComponentInChildren<WeaponAim>().transform.FindChild("PlayerHand");
+		throwForce = new Vector2(0.0f, 50.5f);
 	
 	}
 	
@@ -114,27 +120,58 @@ public class Controls : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if(other.gameObject.tag =="weapon")
+
+		if(Input.GetKeyDown(KeyCode.X))
 		{
-			if(Input.GetKeyDown(KeyCode.X))
+			//interact with weapon
+			if(other.gameObject.tag =="weapon")
 			{
-				//finding point to lock weapon to hand
-				other.transform.parent = pHand.transform;
-				//sync position
 
-				//first get the difference to move from grip point of weapon to hand
-				Vector3 posDiff = other.transform.parent.position - other.transform.FindChild("weaponGrip").transform.position;
+				if(pHand.transform.childCount >0)
+				{
+					GameObject oldWeap = pHand.transform.GetChild(0).gameObject;
+					//drop current weapon?
+					if(other.gameObject != oldWeap)
+					{
+						pHand.DetachChildren();
+						oldWeap.transform.localScale = new Vector2(1.0f,1.0f);
+						oldWeap.GetComponent<Rigidbody2D>().AddForce(throwForce);
+					}
+				}
 
-				//then move weapon by that much
-				other.transform.position = other.transform.position + posDiff;
+				if(pHand.transform.childCount <=1)
+				{
+					//finding point to lock weapon to hand
+					other.transform.parent = pHand.transform;
+					//sync position
 
-				//sync scale
-				other.transform.transform.localScale =other.transform.parent.transform.localScale;
+					//first get the difference to move from grip point of weapon to hand
+					Vector3 posDiff = other.transform.parent.position - other.transform.FindChild("weaponGrip").transform.position;
 
-				//sync rotation
-				other.transform.transform.rotation =other.transform.parent.transform.rotation;
-				//blah
+					//then move weapon by that much
+					other.transform.position = other.transform.position + posDiff;
+
+					//sync scale
+					other.transform.transform.localScale =other.transform.parent.transform.localScale;
+
+					//sync rotation
+					other.transform.transform.rotation =other.transform.parent.transform.rotation;
+					//blah
+				}
+			}
+			//interact with supply
+			else if(other.gameObject.tag == "supply" && curSupplies <= maxSupplies && onePickUp)
+			{
+
+				Destroy(other.gameObject);
+				curSupplies = curSupplies +1;
+				onePickUp = false;
 			}
 		}
+	}
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		onePickUp = true;
 	}
 }

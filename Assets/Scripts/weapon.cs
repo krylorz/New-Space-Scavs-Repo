@@ -13,7 +13,7 @@ public class weapon : MonoBehaviour {
 
 	bool reloading;
 	public float reloadTime = 1.0f;
-	float curTime = 0;
+	public float curTime = 0;
 	// Use this for initialization
 	void Start () {
 		reloading = false;
@@ -28,12 +28,18 @@ public class weapon : MonoBehaviour {
 		{
 			rb.isKinematic = true;
 		}
+		else
+		{
+			rb.isKinematic = false;
+		}
+
 		if(reloading)
 		{
 			curTime += Time.deltaTime;
 			if(curTime >= reloadTime)
 			{
 				reloading = false;
+				curTime = 0.0f;
 			}
 		}
 	
@@ -55,5 +61,14 @@ public class weapon : MonoBehaviour {
 		}
 
 
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.tag == "weapon")
+		{
+			Physics2D.IgnoreCollision(this.GetComponent<BoxCollider2D>(),other);
+			Physics2D.IgnoreCollision(this.GetComponent<CircleCollider2D>(),other);
+		}
 	}
 }

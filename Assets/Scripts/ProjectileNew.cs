@@ -9,6 +9,7 @@ public class ProjectileNew : MonoBehaviour {
 	public bool faceLeft;
 	public float speed = 3f;
 	public GameObject flash;
+	public GameObject explosion;
 	// Use this for initialization
 	void Start () 
 	{
@@ -41,5 +42,19 @@ public class ProjectileNew : MonoBehaviour {
 	void OnBecameInvisible()
 	{
 		Destroy(this.gameObject);
+	}
+
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if(other.gameObject.tag == "Enemy")
+		{
+			Destroy(this.gameObject);
+		}
+	}
+
+	void OnDestroy()
+	{
+		Instantiate(explosion,this.transform.position,this.transform.rotation);
 	}
 }
